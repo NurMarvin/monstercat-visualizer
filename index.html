@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monstercat Visualizer</title>
+  </head>
+  <body>
+    <audio id="track" controls crossorigin="anonymous">
+      <source src="src/assets/songs/light-it-up.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="container">
+      <div class="visualizer-container">
+        <canvas id="visualizer">
+          <p>Your browser does not support the canvas element.</p>
+        </canvas>
+        <canvas id="intro">
+          <p>Your browser does not support the canvas element.</p>
+        </canvas>
+      </div>
+      <div class="track-metadata">
+        <img src="src/assets/images/default-album-art.png" id="album-art" />
+        <div class="track-info">
+          <h1 id="track-artist">Robin Hustin x TobiMorrow</h1>
+          <h2 id="track-title">Light It Up</h2>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
